@@ -3,7 +3,7 @@ $(function(){
 	//此时应当使用delegate的事件委托形式
 	initTable();
 
-	$('thead').on('click','i',function(){
+	$('table').on('click','i',function(){
 		var $this = $(this);
 		var label = $this.siblings('label').html();
 		if($this.hasClass('sortedUp')){
